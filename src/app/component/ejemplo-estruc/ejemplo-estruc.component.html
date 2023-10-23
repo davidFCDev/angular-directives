@@ -1,1 +1,19 @@
-<p>ejemplo-estruc works!</p>
+<div>
+  <h1>Ejemplo Directiva Estructural</h1>
+  <p>Se trata de una directiva más avanzada que un simple ngIf</p>
+
+  <p *rolCorrecto="rol">
+    Ejemplo básico: Contenido oculto para los que no tienen el rol
+  </p>
+
+  <ng-template [rolCorrecto]="rol" #bloqueParaRol>
+    <p>Ejemplo con ngTemplate</p>
+    <p>Contenido oculto para los que no tienen el rol</p>
+  </ng-template>
+
+  <div>
+    <button (click)="cambiarRol()">
+      {{ rol ? "OCULTAR" : "MOSTRAR" }}
+    </button>
+  </div>
+</div>

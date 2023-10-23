@@ -6,13 +6,23 @@
     color
   </p>
 
+  <!-- Bloque para seleccionar el color -->
   <div>
     <h2>Selecciona el color para subrayar:</h2>
     <div>
       <input type="radio" name="colors" (click)="color = 'yellow'" />Amarillo
       <input type="radio" name="colors" (click)="color = 'lightGreen'" />Verde
       <input type="radio" name="colors" (click)="color = 'cyan'" />Azul
-
     </div>
+  </div>
+
+  <!-- Texto para subrayar -->
+  <div>
+    <p [appHighlight]="color">
+      Texto para probar la directiva sin Default Color
+    </p>
+    <p [appHighlight]="color" defaultColor="violet">
+      Texto para probar la directiva con Default Color
+    </p>
   </div>
 </div>
