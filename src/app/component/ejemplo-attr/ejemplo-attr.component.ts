@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-ejemplo-attr',
   templateUrl: './ejemplo-attr.component.html',
   styleUrls: ['./ejemplo-attr.component.scss']
 })
-export class EjemploAttrComponent {
+export class EjemploAttrComponent implements OnInit {
+
+  // Color para subrayar los textos
+  color: string = '';
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }

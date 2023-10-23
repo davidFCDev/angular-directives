@@ -7,6 +7,7 @@ import { EjemploEstrucComponent } from './component/ejemplo-estruc/ejemplo-estru
 import { AttrDirective } from './directives/attr.directive';
 import { EjemploLifeCycleComponent } from './components/ejemplo-life-cycle/ejemplo-life-cycle.component';
 import { StrucDirective } from './directives/struc.directive';
+import { LifeCycleDirective } from './directives/life-cycle.directive';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { StrucDirective } from './directives/struc.directive';
     EjemploLifeCycleComponent,
     AttrDirective,
     StrucDirective,
+    LifeCycleDirective,
   ],
   imports: [
     BrowserModule
