@@ -5,13 +5,17 @@ import { AppComponent } from './app.component';
 import { EjemploAttrComponent } from './component/ejemplo-attr/ejemplo-attr.component';
 import { EjemploEstrucComponent } from './component/ejemplo-estruc/ejemplo-estruc.component';
 import { AttrDirective } from './directives/attr.directive';
+import { EjemploLifeCycleComponent } from './components/ejemplo-life-cycle/ejemplo-life-cycle.component';
+import { StrucDirective } from './directives/struc.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     EjemploAttrComponent,
     EjemploEstrucComponent,
-    AttrDirective
+    EjemploLifeCycleComponent,
+    AttrDirective,
+    StrucDirective,
   ],
   imports: [
     BrowserModule
